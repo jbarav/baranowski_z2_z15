@@ -1,0 +1,35 @@
+<html>
+ <head>
+ <META HTTP-EQUIV="content-type" CONTENT="text/html; charset="utf-8">
+ </head>
+<body>
+	<style>
+		p {
+		font-family: Arial;
+		}
+	</style>
+	<h1> Wewnętrzny arkusz stylów: </h1>
+	<ol type="1">
+	<li><h6>Gdzie jest wstawiany</h6> </li>
+	<p><u>Wstawia się zawsze w części nagłówkowej dokumentu (pomiędzy znacznikami <head> a </head>).</u> Można go zastosować, gdy elementy które pragniemy poddać formatowaniu, występują wielokrotnie na stronie i wszystkim chcemy nadać takie same atrybuty (inne niż domyślne).</p>
+	<li><h6>składnia teoretyczna (w ramce, konieczne wcięcia)</h6> </li>
+	<textarea cols="73" rows="10" id="test">
+<head>
+	(...)
+  <style type="text/css">
+  /* <![CDATA[ */
+	selektor1 { cecha: wartość; cecha2: wartość2... }
+	selektor2 { cecha: wartość; cecha2: wartość2... }
+	(...)
+  /* ]]> */
+  </style>
+	(...)
+</head>
+	</textarea>
+	<li><h6>Jakie mogą być selektory</h6> </li>
+	<p><b>Selektorem</b> może być praktycznie dowolny znacznik, np. p (akapit), h1 (tytuł), td (komórka tabeli) i inne. To właśnie elementom, które znajdują się w kodzie źródłowym, pomiędzy tymi znacznikami, nadajemy atrybuty formatowania opisane w arkuszu</p>
+	<li><h6>Jakie mogą być cechy i wartości</h6> </li>
+	<p>Jako <b>"cecha"</b> (w deklaracji stylu - powyżej) należy wpisać o jakie konkretnie atrybuty formatowania nam chodzi (opisane w kolejnych rozdziałach).Natomiast jako wyraz <b>"wartość"</b> wpisujemy dokładną wartość atrybutu.rozdzielone średnikami. </p>
+	</ol>
+</body>
+</html>
